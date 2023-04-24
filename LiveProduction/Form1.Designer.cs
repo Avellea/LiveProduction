@@ -38,8 +38,10 @@
             helpToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
+            button1 = new Button();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // statusStrip1
@@ -109,13 +111,24 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(button1);
             groupBox1.Location = new Point(12, 27);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(188, 398);
+            groupBox1.Size = new Size(196, 398);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBox1.Text = "Paths";
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(115, 369);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Submit";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -133,6 +146,7 @@
             statusStrip1.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,5 +163,6 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private GroupBox groupBox1;
+        private Button button1;
     }
 }

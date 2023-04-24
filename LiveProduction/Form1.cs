@@ -6,7 +6,7 @@ namespace LiveProduction
     public partial class Form1 : Form
     {
 
-        
+
         public Form1()
         {
 #if DEBUG
@@ -38,7 +38,13 @@ namespace LiveProduction
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+            Console.WriteLine("Entered...");
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(ConvertProgressBar.Value);
+            ConvertProgressBar.Value += 33;
         }
     }
 }
